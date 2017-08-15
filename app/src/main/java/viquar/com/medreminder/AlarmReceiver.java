@@ -27,6 +27,7 @@ public class AlarmReceiver extends AppCompatActivity {
         String med_speak="Please take the medicine called "+medicineGet;
         String dose_speak="The dosage is "+dosageGet;
         say=time_speak+" "+med_speak+" "+dose_speak;
+        //generating the text to speech
         textToSpeech=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
